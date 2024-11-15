@@ -5,74 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hack Store</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Password Lock Screen */
-        #lock-screen {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            background: url('https://i.ibb.co/C2Fm1Mp/IMG-20241112-WA0405.jpg') no-repeat center center fixed;
+            background: url('https://i.ibb.co/vk3M5Jq/file-tuoosr-Gs-Dwf-Tv-XZz7-HK6rn2z-3.webp') no-repeat center center fixed;
             background-size: cover;
-        }
-
-        #lock-screen .password-box {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        #lock-screen .password-box input {
-            width: 200px;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        #lock-screen .password-box button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        #lock-screen .password-box button:hover {
-            background-color: #0056b3;
-        }
-
-        #lock-screen .get-password-btn {
-            margin-top: 10px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        #lock-screen .get-password-btn:hover {
-            background-color: #218838;
-        }
-
-        /* Main Page */
-        #main-page {
-            display: none; /* Hidden until password is verified */
+            color: #333;
         }
 
         .container {
@@ -95,7 +34,7 @@
         .card {
             width: 150px;
             height: 150px;
-            background-color: rgba(0, 123, 255, 0.8);
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
             border-radius: 15px;
             display: flex;
             flex-direction: column;
@@ -110,7 +49,7 @@
         }
 
         .card:hover {
-            background-color: rgba(0, 123, 255, 1);
+            background-color: rgba(0, 123, 255, 1); /* Fully opaque blue on hover */
         }
 
         .card img {
@@ -130,7 +69,7 @@
         .small-box {
             width: 100px;
             height: 100px;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
             border-radius: 10px;
             display: flex;
             flex-direction: column;
@@ -145,7 +84,7 @@
         }
 
         .small-box:hover {
-            background-color: rgba(200, 200, 200, 1);
+            background-color: rgba(200, 200, 200, 1); /* Light gray on hover */
         }
 
         .small-box img {
@@ -174,68 +113,93 @@
     </style>
 </head>
 <body>
-    <!-- Password Lock Screen -->
-    <div id="lock-screen">
-        <div class="password-box">
-            <h2>Enter Password</h2>
-            <input type="password" id="password" placeholder="Enter password">
-            <button onclick="checkPassword()">Submit</button>
-            <br>
-            <a href="https://put-your-password-link" class="get-password-btn">Get Password Here</a>
-        </div>
+    <div class="header">HACK STORE</div>
+    <div class="container">
+        <a href="https://emmyhenz-tech.github.io/CHECK-YOUR-PERSONAL-TY/" class="card">
+            <img src="https://i.ibb.co/1RjFCzZ/IMG-20241115-WA0162.jpg" alt="Personality Icon">
+            <div>PERSONALITY</div>
+            <small>PERSONALITY</small>
+        </a>
+        <a href="https://emmy-henz-tech.github.io/MOVIE-ZONE/" class="card">
+            <img src="https://i.ibb.co/2y7V9pd/IMG-20241115-WA0157.jpg" alt="MOVIE Icon">
+            <div>MOVIE SITE</div>
+            <small>Apps</small>
+        </a>
+        <a href="https://put-your-link" class="card">
+            <img src="https://i.ibb.co/SNv7CyM/IMG-20241115-WA0159.jpg" alt="Hack Icon">
+            <div>hack</div>
+            <small>HACKING TOOLS</small>
+        </a>
+        <a href="https://emmy-henz-tech.github.io/BUG-MENU-/" class="card">
+            <img src="https://i.ibb.co/SRBXwM0/IMG-20241115-WA0160.jpg">
+            <div>BUG SCRIPT</div>
+            <small>BUG SCRIPTS</small>
+        </a>
+        <a href="https://emmy-henz-tech.github.io/PREMIUM-APK/" class="card">
+            <img src="https://i.ibb.co/Np9LBsY/IMG-20241115-WA0166.jpg" alt="Premium Icon">
+            <div>PREMIUM APK</div>
+            <small>PREMIUM APKS</small>
+        </a>
+        <a href="https://emmy-henz-tech.github.io/PHISHING-CODES-FOR-TERMUX/" class="card">
+            <img src="https://i.ibb.co/rG5NKHq/IMG-20241026-WA0389.jpg" alt="Termux Icon">
+            <div>TERMUX COMMANDS</div>
+            <small>TERMUX CMDS</small>
+        </a>
+<a href="https://emmy-henz-tech.github.io/PHISHING-CODES-FOR-TERMUX/" class="card">
+            <img src="https://i.ibb.co/rG5NKHq/IMG-20241026-WA0389.jpg" alt="Termux Icon">
+            <div>TERMUX COMMANDS</div>
+            <small>TERMUX CMDS</small>
+        </a>
+<a href="https://emmy-henz-tech.github.io/PHISHING-CODES-FOR-TERMUX/" class="card">
+            <img src="https://i.ibb.co/rG5NKHq/IMG-20241026-WA0389.jpg" alt="Termux Icon">
+            <div>TERMUX COMMANDS</div>
+            <small>TERMUX CMDS</small>
+        </a>
+<a href="https://emmy-henz-tech" class="card">
+            <img src="https://i.ibb.co/PNB7YQM/IMG-20241115-WA0163.jpg" alt="Virus Icon">
+            <div>OTHER MENU</div>
+            <small>OTHER MENU</small>
+        </a>
+<a href="https://ytdl.giftedtech.my.id" class="box">YT Downloader" class="card">
+            <img src="https://i.ibb.co/j4Wn45L/IMG-20241115-WA0165.jpg" alt="yt Icon">
+            <div>YT DOWNLOADER</div>
+            <small>YT DOWNLOADER</small>
+        </a>
+<a href="https://emmy-henz-tech" class="card">
+            <img src="https://i.ibb.co/PNB7YQM/IMG-20241115-WA0163.jpg" alt="Virus Icon">
+            <div>VIRUS MENU</div>
+            <small>VIRUS MENU</small>
+        </a>
+<a href="https://emmy-henz-tech.github.io/CAPCUT-PRO-ACC/" class="card">
+            <img src="https://i.ibb.co/PNB7YQM/IMG-20241115-WA0163.jpg" alt="Capcut Icon">
+            <div>CAPCUT PRO ACC</div>
+            <small>CAPCUT PRO ACC</small>
+        </a>
+<a href="https://emmy-henz-tech.github.io/WHATSAPP-MODS-ANTIBUG/" class="card">
+            <img src="https://i.ibb.co/82HwtdZ/IMG-20241115-WA0161.jpg" alt="Termux Icon">
+            <div>WHATSAPP MODS</div>
+            <small>WHATSAPP MODS</small>
+        </a>
     </div>
 
-    <!-- Main Page -->
-    <div id="main-page">
-        <!-- Header -->
-        <div class="header">HACK STORE</div>
-
-        <!-- Cards -->
-        <div class="container">
-            <a href="https://put-your-link" class="card">
-                <img src="https://put-your-wifi-image-link" alt="WiFi Icon">
-                <div>WiFi</div>
-                <small>Hacking</small>
-            </a>
-            <a href="https://put-your-link" class="card">
-                <img src="https://put-your-rooting-image-link" alt="Rooting Icon">
-                <div>Rooting</div>
-                <small>Apps</small>
-            </a>
-        </div>
-
-        <!-- Footer Links -->
-        <div class="footer-links">
-            <a href="https://put-your-telegram-link" class="small-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
-                Telegram
-            </a>
-            <a href="https://put-your-whatsapp-link" class="small-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
-                WhatsApp
-            </a>
-            <a href="https://put-your-youtube-link" class="small-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/YouTube_Icon_%282013-2017%29.svg" alt="YouTube Icon">
-                YouTube
-            </a>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <a href="https://put-your-footer-link" class="footer-link">Footer Link</a>
-        </div>
+    <!-- MESSAGE OWNER >
+    <div class="https://t.me/EmmyHenz">
+        <a href="https://t.me/EMMYHENZTECHINFO" class="small-box">
+            <img src="https://i.ibb.co/hdPBhnw/IMG-20241115-WA0014.jpg" alt="Telegram Icon">
+            Telegram
+        </a>
+        <a href="https://whatsapp.com/channel/0029VangYOt96H4JhFarL10C" class="small-box">
+            <img src="https://i.ibb.co/Rhg6K6p/IMG-20241115-WA0015.jpg" alt="WhatsApp Icon">
+            WhatsApp
+        </a>
+        <a href="https://www.youtube.com/@EMMYHENZTECHINFO" class="small-box">
+            <img src="https://i.ibb.co/VT1JMVc/IMG-20241115-WA0013.jpg" alt="YouTube Icon">
+            YouTube
+        </a>
     </div>
 
-    <script>
-        function checkPassword() {
-            const password = document.getElementById("password").value;
-            if (password === "EMMYHENZ") {
-                document.getElementById("lock-screen").style.display = "none";
-                document.getElementById("main-page").style.display = "block";
-            } else {
-                alert("Incorrect password!");
-            }
-        }
-    </script>
+    <div class="OWNER">
+        <a href="https://whatsapp.com/channel/0029VangYOt96H4JhFarL10C">Join channel</a>
+    </div>
 </body>
 </html>
