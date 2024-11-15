@@ -12,84 +12,20 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Password Lock Screen */
-        #lock-screen {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            background: url('https://i.ibb.co/C2Fm1Mp/IMG-20241112-WA0405.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        #lock-screen .password-box {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
+        .header {
             text-align: center;
-            color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        #lock-screen .password-box input {
-            width: 200px;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        #lock-screen .password-box button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        #lock-screen .password-box button:hover {
-            background-color: #0056b3;
-        }
-
-        #lock-screen .get-password-btn {
-            margin-top: 10px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        #lock-screen .get-password-btn:hover {
-            background-color: #218838;
-        }
-
-        /* Main Page */
-        #main-page {
-            display: none; /* Hidden until password is verified */
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333;
         }
 
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 20px; /* Add space between boxes */
             padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         .card {
@@ -117,13 +53,12 @@
             width: 60px;
             height: 60px;
             margin-bottom: 10px;
-            border-radius: 10px;
         }
 
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 20px; /* Add space between small boxes */
             margin: 20px 0;
         }
 
@@ -153,80 +88,36 @@
             height: 50px;
             margin-bottom: 5px;
         }
-
-        .footer {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .footer a {
-            text-decoration: none;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .footer a:hover {
-            background-color: rgba(0, 0, 0, 1);
-        }
     </style>
 </head>
 <body>
-    <!-- Password Lock Screen -->
-    <div id="lock-screen">
-        <div class="password-box">
-            <h2>Enter Password</h2>
-            <input type="password" id="password" placeholder="Enter password">
-            <button onclick="checkPassword()">Submit</button>
-            <br>
-            <a href="https://put-your-password-link" class="get-password-btn">Get Password Here</a>
-        </div>
+    <div class="header">HACK STORE</div>
+    <div class="container">
+        <a href="https://put-your-link" class="card">
+            <img src="https://put-your-wifi-image-link" alt="WiFi Icon">
+            <div>WiFi</div>
+            <small>Hacking</small>
+        </a>
+        <a href="https://put-your-link" class="card">
+            <img src="https://put-your-rooting-image-link" alt="Rooting Icon">
+            <div>Rooting</div>
+            <small>Apps</small>
+        </a>
     </div>
 
-    <!-- Main Page -->
-    <div id="main-page">
-        <div class="header">HACK STORE</div>
-        <div class="container">
-            <a href="https://put-your-link" class="card">
-                <img src="https://put-your-wifi-image-link" alt="WiFi Icon">
-                <div>WiFi</div>
-                <small>Hacking</small>
-            </a>
-            <a href="https://put-your-link" class="card">
-                <img src="https://put-your-rooting-image-link" alt="Rooting Icon">
-                <div>Rooting</div>
-                <small>Apps</small>
-            </a>
-        </div>
-
-        <div class="footer-links">
-            <a href="https://put-your-telegram-link" class="small-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
-                Telegram
-            </a>
-            <a href="https://put-your-whatsapp-link" class="small-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
-                WhatsApp
-            </a>
-            <a href="https://put-your-youtube-link" class="small-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/YouTube_Icon_%282013-2017%29.svg" alt="YouTube Icon">
-                YouTube
-            </a>
-        </div>
+    <div class="footer-links">
+        <a href="https://put-your-telegram-link" class="small-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+            Telegram
+        </a>
+        <a href="https://put-your-whatsapp-link" class="small-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+            WhatsApp
+        </a>
+        <a href="https://put-your-youtube-link" class="small-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/YouTube_Icon_%282013-2017%29.svg" alt="YouTube Icon">
+            YouTube
+        </a>
     </div>
-
-    <script>
-        function checkPassword() {
-            const password = document.getElementById("password").value;
-            if (password === "EMMYHENZ") {
-                document.getElementById("lock-screen").style.display = "none";
-                document.getElementById("main-page").style.display = "block";
-            } else {
-                alert("Incorrect password!");
-            }
-        }
-    </script>
 </body>
 </html>
